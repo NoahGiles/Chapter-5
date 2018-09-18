@@ -46,6 +46,7 @@ public class AgeGame
 		{
 			result = "Don't you have a morgue to be at?";
 		}
+		displayMessage(result);
 	}
 	public static void displayMessage(String result)
 	{
