@@ -2,7 +2,8 @@ package practice;
 
 import java.util.Scanner;
 
-public class DoorGame {
+public class DoorGame
+{
 
 	public static void main(String[] args)
 	{
@@ -35,6 +36,6 @@ public class DoorGame {
 		displayMessage(result);
 	}
 	public static void displayMessage(String result) {
-		System.out.println("You won " + result + ".");
+		System.out.println("You won " + result + "!");
 	}
 }
