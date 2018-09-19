@@ -24,6 +24,6 @@ public class EvenOdd
 	}
 	public static void evenOdd(String result)
 	{
-		System.out.print("The number is " + result);
+		System.out.print("The number is " + result + ".");
 	}
 }
