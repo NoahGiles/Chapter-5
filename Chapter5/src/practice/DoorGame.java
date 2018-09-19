@@ -35,8 +35,9 @@ public class DoorGame
 				result = "nothing, it was empty. Hahahahahaha!";
 			}
 			else if(chestChoice == 3) {
-			System.out.println("You find a special hidden room with 3 books on the table, there are no"
-					+ " words on their covers. Do you choose Book 1 Book 2, or Book 3?");
+			System.out.println("You find a special hidden room to the side"
+					+ " with 3 books on the table, there are no words on their covers. "
+					+ " Do you choose Book 1 Book 2, or Book 3?");
 			bookChoice = input.nextInt();
 			if (bookChoice == 1)
 			{
@@ -48,7 +49,7 @@ public class DoorGame
 			}
 			else if (bookChoice == 3)
 			{
-				result = "a book full of satanic rituals. You regret looking upon the book";
+				result = "a book full of satanic rituals. You regret looking upon the book greatly";
 			}
 			}
 			else
