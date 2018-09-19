@@ -11,28 +11,28 @@ public class AgeGame
 		int usersAge;
 		String result = null;
 		Scanner input = new Scanner(System.in);
-		System.out.println("Please enter your age to be insulted");
+		System.out.println("Please enter your age to be insulted >> ");
 		usersAge = input.nextInt();
 		
 		if (usersAge <= 12)
 		{
-			result = "You are a child.";
+			result = "You are a child. Leave me.";
 		}
 		else if(usersAge >= 13 && usersAge <= 18)
 		{
-			result = "You are but a teenager";
+			result = "You are but a teenager. Go annoy your teachers, not me.";
 		}
 		else if(usersAge >= 19 && usersAge <= 25)
 		{
-			result = "You need to get a job";
+			result = "You need to get a job.";
 		}
 		else if(usersAge >= 26 && usersAge <= 30)
 		{
-			result = "You REALLY need to get a job";
+			result = "You REALLY need to get a job.";
 		}
 		else if(usersAge >= 31 && usersAge <= 40)
 		{
-			result = "You're too old to be playing these games";
+			result = "You're too old to be playing these games.";
 		}
 		else if(usersAge >= 41 && usersAge <= 50)
 		{
@@ -42,9 +42,13 @@ public class AgeGame
 		{
 			result = "The retirement home is looking for you.";
 		}
-		else if(usersAge >=61)
+		else if(usersAge >= 61 && usersAge <= 200)
 		{
 			result = "Don't you have a morgue to be at?";
+		}
+		else if(usersAge >= 201)
+		{
+			result = "You are literally dead.";
 		}
 		displayMessage(result);
 	}
