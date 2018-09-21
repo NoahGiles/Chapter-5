@@ -14,7 +14,6 @@ public class CondoSales {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Would you like to purchase a \n1. park view condo\n2. golf course condo\n3. lake view condo");
 		userChoice = input.nextInt();
-		
 		if (userChoice == 1) {
 			System.out.print("Cost : $150,000");
 		}
@@ -23,6 +22,10 @@ public class CondoSales {
 		}
 		else if (userChoice == 3) {
 			System.out.print("Cost : $210,000");
+		}
+		if (userChoice >= 1 && userChoice <= 3)
+		{
+			
 		}
 		else {
 			System.out.print("Cost : $0");
