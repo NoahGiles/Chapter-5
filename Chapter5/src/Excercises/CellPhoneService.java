@@ -21,30 +21,32 @@ public class CellPhoneService {
 		System.out.println("Gigabytes >> ");
 		data = input.nextDouble();
 		
-		if (minutes <= 500 || data == 0)
+		if (minutes < 500 && data == 0)
 		{
 			System.out.println("We recommend Plan A, for $49 per month.");
 		}
-		else if (minutes <= 500 || messages >= 1 || messages < 80)
+		else if (minutes < 500 && minutes < 2000 && messages >= 1 && messages < 80 && data == 0)
 		{
 			System.out.println("We recommend Plan B, for $55 per month.");
 		}
-		else if (minutes >= 500 || data == 0 || messages >= 1 || messages <= 100)
+		else if (minutes < 500 && data == 0 && messages >= 1 && messages <= 100)
 		{
 			System.out.println("We recommend Plan C, for $61 per month.");
 		}
-		else if (minutes >= 500 || data == 0|| messages >= 80 || messages >= 100)
+		else if (minutes >= 500 && data == 0 && messages >= 100)
 		{
 			System.out.println("We recommend Plan D, for $70 per month.");
 		}
-		else if (data < 2 || data > .01)
+		else if (data < 2 && data > .01)
 		{
 			System.out.println("We recommend Plan E, for $79 per month.");
 		}
 		else if (data >= 2)
 		{
 		System.out.println("We recommend Plan F, for $87 per month.");
-		}	
+		}
+		else
+			System.out.print("Sorry, we don't have a plan for that.");
 	}
 
 }
