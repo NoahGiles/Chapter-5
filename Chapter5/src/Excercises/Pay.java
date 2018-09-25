@@ -14,7 +14,8 @@ public class Pay {
 		skill = input.nextInt();
 		System.out.print("Please insert a number of weekly hours worked >> ");
 		hours = input.nextInt();
-		
+		if (skill == 1 || skill == 2 || skill == 3)
+		{
 		if (skill == 1)
 		{
 			System.out.println("Hourly pay rate : $18.50");
@@ -57,6 +58,8 @@ public class Pay {
 				{
 					System.out.println("You've chosen long-term disability insurance, for a weekly cost of $10.00.");
 				}
+				}
+				//hourly pay equation goes here.
 				}
 			else if (skill > 3)
 			{
