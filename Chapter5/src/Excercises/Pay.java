@@ -1,5 +1,7 @@
 package Excercises;
-	//big mess of code. Unfinished.
+	
+//big mess of code. Unfinished.
+
 import java.util.Scanner;
 
 public class Pay {
