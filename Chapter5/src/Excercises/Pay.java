@@ -1,5 +1,5 @@
 package Excercises;
-	//big mess of code
+	//big mess of code. Unfinished.
 import java.util.Scanner;
 
 public class Pay {
@@ -34,7 +34,8 @@ public class Pay {
 	public static void payRates(double hours, double payRate, int insurance, int retirement) {
 		double totalPay;
 		int insurancePlan;
-		double insuranceCost;
+		double insuranceCost = 0;
+		double retirementBonus = 0;
 		if (insurance == 1)
 		{
 			System.out.println("Please choose an insurance plan\n1. Medical insurance\n2. Dental insurance\n3. Long-term disability insurance");
@@ -48,9 +49,17 @@ public class Pay {
 			{
 				insuranceCost = 20.00;
 			}
-			else if
+			else if (insurancePlan == 3)
+			{
+				insuranceCost = 10.00;
+			}
+			if (retirement == 0)
+			{
+				retirementBonus = 1.03;
+			}
+			
 		}
-		totalPay = (hours * payRate + (hours - 40 * (payRate * 1.5)) - insuranceCost);
+		totalPay = (hours * payRate + (hours - 40 * (payRate * 1.5)) - insuranceCost) * retirementBonus;
 		System.out.println("Your gross pay is " + totalPay + ".");
 		
 	}
