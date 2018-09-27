@@ -1,6 +1,6 @@
 package Excercises;
 	
-//big mess of code. Unfinished.
+//big mess of code. Unfinished?
 
 import java.util.Scanner;
 
@@ -31,10 +31,12 @@ public class Pay {
 			payRate = 22;
 			payRates(hours, payRate, 1, 1);
 			}
+		else
+			System.out.println("Invalid skill level.");
 		
 	}
 	public static void payRates(double hours, double payRate, int insurance, int retirement) {
-		double totalPay;
+		double totalPay = 0;
 		int insurancePlan;
 		double insuranceCost = 0;
 		double retirementBonus = 0;
@@ -55,15 +57,22 @@ public class Pay {
 			{
 				insuranceCost = 10.00;
 			}
-			if (retirement == 0)
+			if (retirement == 1)
 			{
 				retirementBonus = 1.03;
 			}
 			
 		}
-		totalPay = (hours * payRate + (hours - 40 * (payRate * 1.5)) - insuranceCost) * retirementBonus;
-		System.out.println("Your gross pay is " + totalPay + ".");
+		if (hours >= 40)
+		{
+		totalPay = (hours * payRate + ((hours - 40) * (payRate)) * retirementBonus) - insuranceCost;
 		
+		}
+		else if(hours < 40)
+		{
+			totalPay = (hours * payRate + ((hours - 40) * (payRate * 1.5))  * retirementBonus) - insuranceCost;
+		}
+		System.out.println("Your gross pay is $" + totalPay + ".");
 	}
 }
 
