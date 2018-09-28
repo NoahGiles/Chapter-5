@@ -42,7 +42,7 @@ public class RockPaperScissors {
 					}
 					else if (computerChoice == 3)
 					{
-						System.out.print("Computer chose scissors. You lost!");
+						System.out.println("Computer chose scissors. You lost!");
 					}
 				}
 			else if (userChoice == 3)
@@ -57,7 +57,7 @@ public class RockPaperScissors {
 					}
 					else if (computerChoice == 3)
 					{
-					System.out.print("Computer chose scissors. You tied!");
+					System.out.println("Computer chose scissors. You tied!");
 					}
 				}
 			else
